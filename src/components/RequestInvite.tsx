@@ -1,7 +1,9 @@
-export const RequestInvite = () => {
+export const RequestInvite = ({ hidden = "hidden", flex = "flex" }) => {
   return (
     <div>
-      <button className="hidden rounded-3xl text-LightGray hover:bg-GrayBlue/75 bg-gradient-to-r bg-LimeGreen px-10 py-3 lg:flex">
+      <button
+        className={`${hidden} rounded-3xl text-LightGray hover:bg-opacity-45 bg-gradient-to-r from-LimeGreen lg:flex to-Cyan px-10 py-3 ${flex}`}
+      >
         Request Invite
       </button>
     </div>
