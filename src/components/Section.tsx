@@ -7,19 +7,21 @@ export const Section = () => {
   return (
     <section
       id="#section"
-      className="pb-[6rem] pt-[8rem] bg-LightGrayBlue items-center px-8 lg:px-[6rem] gap-20  flex flex-col"
+      className="pb-[6rem] pt-[8rem] text-center md:text-left bg-LightGrayBlue px-8 lg:px-[7rem] gap-16  flex flex-col"
     >
-      <div className="text-center lg:text-left flex flex-col gap-6">
-        <h1 className="mb-2 font-normal lg:text-left text-center text-3xl text-DarkBlue tracking-wide">
-          Why choose Easybank?
-        </h1>
-        <p className="text-wrap text-GrayBlue">
-          We leverage Open Banking to turn your bank account into your financial
-          hub. Control your finances like never before.
-        </p>
+      <div className=" grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="">
+          <h1 className="mb-2 font-normal lg:text-left text-center text-3xl text-DarkBlue tracking-wide">
+            Why choose Easybank?
+          </h1>
+          <p className="text-wrap md:text-balance text-GrayBlue">
+            We leverage Open Banking to turn your bank account into your
+            financial hub. Control your finances like never before.
+          </p>
+        </div>
       </div>
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
-        <div className="flex flex-col gap-8">
+      <div className="grid grid-cols-1 gap-6  md:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-col place-items-center md:place-items-start gap-8">
           <img
             alt="online"
             src={onlineIcon}
@@ -34,7 +36,7 @@ export const Section = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col place-items-center md:place-items-start gap-8">
             <img
               alt="budgeting"
               src={budgeting}
@@ -50,7 +52,7 @@ export const Section = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col place-items-center md:place-items-start gap-8">
             <img
               alt="onboarding"
               src={onboarding}
@@ -66,7 +68,7 @@ export const Section = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col place-items-center md:place-items-start gap-8">
             <img
               alt="api"
               src={iconApi}

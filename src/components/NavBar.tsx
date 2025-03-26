@@ -20,21 +20,23 @@ export const NavBar = () => {
         setIsOpen(!isOpen);
       }
     };
-    document.addEventListener("mousedown", handleOutsideClick);
+    if (isOpen) {
+      document.addEventListener("mousedown", handleOutsideClick);
+    }
     return () => document.removeEventListener("mousedown", handleOutsideClick);
   }, [isOpen]);
 
   return (
-    <nav className="grid grid-cols-2 lg:grid-cols-3 justify-between relative bg-white px-8 lg:px-[6rem] py-6">
+    <nav className=" z-50 grid grid-cols-2 lg:grid-cols-3 justify-between fixed md:relative w-full bg-white px-8 lg:px-[7rem] py-6">
       <div className="inline-flex items-center gap-1">
-        <img loading="eager" alt="logo" src="/logo.svg" />
         <MotionConfig transition={{ type: "spring", stiffness: "10" }}>
-          <motion.h1
-            animate={{ x: 100, transition: { duration: 1 } }}
+          <motion.div
+            initial={{ x: -500 }}
+            animate={{ x: 0, transition: { duration: 1, delay: 0.5 } }}
             className="text-DarkBlue font-extrabold text-xl"
           >
-            easyBank
-          </motion.h1>
+            <img loading="eager" alt="logo" src="/logo.svg" />
+          </motion.div>
         </MotionConfig>
       </div>
 
@@ -58,7 +60,7 @@ export const NavBar = () => {
       </div>
 
       {/* SideBar for mobile */}
-      <div className="lg:hidden justify-items-end">
+      <div className="lg:hidden ">
         <HamburgerMenu
           menuRef={menuRef}
           isOpen={isOpen}
@@ -67,7 +69,7 @@ export const NavBar = () => {
       </div>
 
       {/* Request Link visible on large screen and above */}
-      <div className="justify-items-end">
+      <div className="pr-5 justify-items-end">
         <RequestInvite />
       </div>
     </nav>

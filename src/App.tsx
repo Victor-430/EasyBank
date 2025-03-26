@@ -8,7 +8,7 @@ import { Articles } from "./components/Articles.tsx";
 
 export const App = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden font-sans">
       <NavBar />
       <Hero />
       <Section />

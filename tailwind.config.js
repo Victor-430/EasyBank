@@ -21,12 +21,12 @@ export default {
         LightGrayBlue: " hsl(220, 16%, 96%)",
       },
 
-      background: {
+      backgroundImage: {
         desktop: "url('/src/assets/images/bg-intro-desktop.svg')",
         mobile: "url('/src/assets/images/bg-intro-mobile.svg')",
       },
       fontFamily: {
-        font: "Public San",
+        sans: ["Public Sans", "ui-sans-serif", "system-ui"],
       },
     },
   },
