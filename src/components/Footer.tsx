@@ -63,7 +63,7 @@ export const Footer = () => {
 
       <div className="space-y-6  justify-items-center md:justify-items-end">
         <RequestInvite hidden="flex" />
-        <p className="capitalize">Ecobank. All rights reserved</p>
+        <p className="capitalize"> © Ecobank. All rights reserved</p>
       </div>
     </footer>
   );

@@ -28,6 +28,10 @@ export default {
       fontFamily: {
         sans: ["Public Sans", "ui-sans-serif", "system-ui"],
       },
+
+      borderColor: {
+        imeGreen: "hsl(136, 65%, 51%)",
+      },
     },
   },
   plugins: [],

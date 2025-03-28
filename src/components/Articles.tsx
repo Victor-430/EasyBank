@@ -12,7 +12,7 @@ export const Articles = () => {
       <h1 className="font-medium tracking-widest text-3xl text-center lg:text-left text-DarkBlue">
         Latest Articles
       </h1>
-      <div className="mt-12 grid grid-cols-1 gap-12 md:gap-8 lg:gap-10 justify-items-center md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid grid-cols-1 gap-12 md:gap-8 lg:gap-16  justify-items-center md:grid-cols-2 xl:grid-cols-4">
         <div className="w-[90%] sm:w-[60%] md:w-[80%] lg:w-[17rem]">
           <img
             src={currencyImage}
