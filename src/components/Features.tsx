@@ -7,13 +7,17 @@ export const Features = () => {
   return (
     <section
       id="#section"
-      className="pb-[6rem] pt-[8rem] text-center md:text-left bg-LightGrayBlue px-8 lg:px-[7rem] gap-16  flex flex-col"
+      className="pb-[6rem] pt-[5rem] md:text-left bg-LightGrayBlue px-8 lg:px-[7rem] gap-16  flex flex-col"
     >
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="">
-          <h1 className="mb-2 font-normal lg:text-left text-center text-3xl text-DarkBlue tracking-wide">
-            Why choose Easybank?
+          <div className="mb-4 sm:flex font-normal sm:text-left text-center text-4xl text-DarkBlue tracking-wide">
+          <h1 className="sm:pr-2">
+            Why choose 
           </h1>
+          <h1>Easybank?</h1>
+
+          </div>
           <p className="text-wrap md:text-balance text-GrayBlue">
             We leverage Open Banking to turn your bank account into your
             financial hub. Control your finances like never before.

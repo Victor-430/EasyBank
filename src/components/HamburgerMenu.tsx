@@ -8,12 +8,14 @@ type HamburgerProps = {
   isOpen: boolean;
   toggleMenu: () => void;
   menuRef: React.RefObject<HTMLDivElement | null>;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
 };
 
 export const HamburgerMenu = ({
   isOpen,
   toggleMenu,
   menuRef,
+  setIsOpen,
 }: HamburgerProps) => {
   useEffect(() => {
     if (isOpen) {
@@ -44,7 +46,9 @@ export const HamburgerMenu = ({
               className="fixed right-0 left-0 top-20 flex justify-center z-50"
             >
               <div className="w-[80%] max-w-md rounded-lg h-[20rem] border shadow-lg bg-white">
-                <div className="py-10 text-center flex gap-5 flex-col">
+                <div 
+                onClick={() => {setIsOpen(!isOpen)}}
+                className="py-10 text-center flex gap-5 flex-col">
                   <NavLink to={"/"} className={activeNav}>
                     Home
                   </NavLink>

@@ -31,7 +31,7 @@ export const NavBar = () => {
   return (
     <>
       <nav className="z-50 fixed shadow-lg md:relative w-full bg-white px-8 lg:px-[7rem] py-4">
-        <div className="grid grid-cols-2 lg:grid-cols-3 justify-between">
+        <div className="grid grid-cols-2 xl:grid-cols-3 justify-between">
           <div className="inline-flex items-center gap-1">
             <MotionConfig transition={{ type: "spring", stiffness: "10" }}>
               <motion.div
@@ -45,7 +45,7 @@ export const NavBar = () => {
           </div>
 
           {/* Navbar visible only on large and above */}
-          <div className="hidden space-x-4 lg:flex">
+          <div className="hidden space-x-4 xl:flex">
             <NavLink to={"/"} className={activeNav}>
               Home
             </NavLink>
@@ -64,10 +64,11 @@ export const NavBar = () => {
           </div>
 
           {/* SideBar for mobile */}
-          <div className="lg:hidden justify-items-end ">
+          <div className="xl:hidden justify-items-end ">
             <HamburgerMenu
               menuRef={menuRef}
               isOpen={isOpen}
+              setIsOpen = {setIsOpen}
               toggleMenu={toggleMenu}
             />
           </div>
