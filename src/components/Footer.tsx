@@ -6,6 +6,7 @@ import facebook from "../assets/images/icon-facebook.svg";
 import footerLogo from "../assets/images/footerLogo.svg";
 
 import { RequestInvite } from "./RequestInvite";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -52,12 +53,12 @@ export const Footer = () => {
       </div>
       <div className="py-6 ">
         <div className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 gap-2">
-          <a className="cursor-pointer hover:text-green-600">About Us</a>
-          <a className="cursor-pointer hover:text-green-600"> Careers</a>
-          <a className="cursor-pointer hover:text-green-600">Contact</a>
-          <a className="cursor-pointer hover:text-green-600">Support</a>
-          <a className="cursor-pointer hover:text-green-600">Blog</a>
-          <a className="cursor-pointer hover:text-green-600">Privacy Policy</a>
+          <Link to={"/about"} className="cursor-pointer hover:text-green-600">About Us</Link>
+          <Link to={"/careers"} className="cursor-pointer hover:text-green-600"> Careers</Link>
+          <Link to={"/contact"} className="cursor-pointer hover:text-green-600">Contact</Link>
+          <Link to={"/support"} className="cursor-pointer hover:text-green-600">Support</Link>
+          <Link to={"/blog"} className="cursor-pointer hover:text-green-600">Blog</Link>
+          <Link to={"/privacy"} className="cursor-pointer hover:text-green-600">Privacy Policy</Link>
         </div>
       </div>
 

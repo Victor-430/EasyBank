@@ -1,3 +1,11 @@
+import { Features } from "../components/Features";
+import { Footer } from "../components/Footer";
+
 export const About = () => {
-  return <div className="relative">About</div>;
+  return (
+    <>
+      <Features />
+      <Footer />
+    </>
+  );
 };

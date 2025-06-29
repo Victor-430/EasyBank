@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Home } from "../Pages/Home";
 import { PageNotFound } from "../Pages/PageNotFound";
-import { About } from "../Pages/About";
+import { Blog } from "../Pages/Blog";
+import{About} from "../Pages/About"
 import { NavBar } from "../components/NavBar";
-// import { Loading } from "../utils/loaading";
 
 export const rootLayout = createBrowserRouter([
   {
@@ -18,6 +18,10 @@ export const rootLayout = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />
       },
 
       {

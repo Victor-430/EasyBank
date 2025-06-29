@@ -3,8 +3,8 @@ import { motion } from "motion/react";
 export const RequestInvite = ({ hidden = "hidden", flex = "flex" }) => {
   return (
     <motion.div
-    initial={{scale: 1}}
-   whileHover={{scale:1.1, transition: {duration:0.8}}}
+    whileTap={{scale:0.8, transition: {duration:0.8}}}
+   whileHover={{scale:1.1, transition: {duration:0.5}}}
     
     >
       <button

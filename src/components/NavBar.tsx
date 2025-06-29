@@ -35,7 +35,7 @@ export const NavBar = () => {
           <div className="inline-flex items-center gap-1">
             <MotionConfig transition={{ type: "spring", stiffness: "10" }}>
               <motion.div
-                initial={{ x: -500 }}
+                initial={{ x: "-100vw" }}
                 animate={{ x: 0, transition: { duration: 1, delay: 0.5 } }}
                 className="text-DarkBlue font-extrabold text-xl"
               >
@@ -45,7 +45,7 @@ export const NavBar = () => {
           </div>
 
           {/* Navbar visible only on large and above */}
-          <div className="hidden space-x-4 xl:flex">
+          <div className="hidden space-x-4 lg:flex">
             <NavLink to={"/"} className={activeNav}>
               Home
             </NavLink>
@@ -64,11 +64,11 @@ export const NavBar = () => {
           </div>
 
           {/* SideBar for mobile */}
-          <div className="xl:hidden justify-items-end ">
+          <div className="lg:hidden justify-items-end ">
             <HamburgerMenu
               menuRef={menuRef}
               isOpen={isOpen}
-              setIsOpen = {setIsOpen}
+              setIsOpen={setIsOpen}
               toggleMenu={toggleMenu}
             />
           </div>
