@@ -12,15 +12,14 @@ export const Features = () => {
         whileInView={{ opacity: 1, transition: { duration: 0.8, delay: 0.5 } }}
         viewport={{ once: true }}
         id="#section"
-        className="pb-[6rem] pt-[5rem] md:text-left  px-8 lg:px-[7rem] gap-16  flex flex-col"
+        className="pb-[6rem] pt-[5rem] t  px-8 lg:px-[7rem] gap-16  flex flex-col"
       >
-        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="">
-            <div className="mb-4 sm:flex font-normal sm:text-left text-center text-4xl text-DarkBlue tracking-wide">
-              <h1 className="sm:pr-2">Why choose</h1>
-              <h1>Easybank?</h1>
+        <div className=" grid grid-cols-1 xl:grid-cols-2 gap-6">
+          <div className="text-center  sm:text-left ">
+            <div className="mb-4 sm:flex font-normal xl:text-left text-4xl text-DarkBlue tracking-wide">
+              <h1 className="">Why choose Easybank?</h1>
             </div>
-            <p className="text-wrap md:text-balance text-GrayBlue">
+            <p className="  text-GrayBlue">
               We leverage Open Banking to turn your bank account into your
               financial hub. Control your finances like never before.
             </p>

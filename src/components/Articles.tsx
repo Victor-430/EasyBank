@@ -13,7 +13,7 @@ export const Articles = () => {
         id="#articles"
         className="  px-4 lg:px-[7rem] text-left pt-20 pb-20"
       >
-        <h1 className="font-medium tracking-widest text-3xl text-center lg:text-left text-DarkBlue">
+        <h1 className="font-medium tracking-widest text-3xl text-center xl:text-left text-DarkBlue">
           Latest Articles
         </h1>
         <div className="mt-12 grid grid-cols-1 gap-12 md:gap-8 lg:gap-16 cursor-pointer justify-items-center md:grid-cols-2 xl:grid-cols-4">

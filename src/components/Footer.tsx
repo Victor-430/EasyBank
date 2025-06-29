@@ -53,16 +53,29 @@ export const Footer = () => {
       </div>
       <div className="py-6 ">
         <div className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 gap-2">
-          <Link to={"/about"} className="cursor-pointer hover:text-green-600">About Us</Link>
-          <Link to={"/careers"} className="cursor-pointer hover:text-green-600"> Careers</Link>
-          <Link to={"/contact"} className="cursor-pointer hover:text-green-600">Contact</Link>
-          <Link to={"/support"} className="cursor-pointer hover:text-green-600">Support</Link>
-          <Link to={"/blog"} className="cursor-pointer hover:text-green-600">Blog</Link>
-          <Link to={"/privacy"} className="cursor-pointer hover:text-green-600">Privacy Policy</Link>
+          <Link to={"/about"} className="cursor-pointer hover:text-green-600">
+            About Us
+          </Link>
+          <Link to={"/careers"} className="cursor-pointer hover:text-green-600">
+            {" "}
+            Careers
+          </Link>
+          <Link to={"/contact"} className="cursor-pointer hover:text-green-600">
+            Contact
+          </Link>
+          <Link to={"/support"} className="cursor-pointer hover:text-green-600">
+            Support
+          </Link>
+          <Link to={"/blog"} className="cursor-pointer hover:text-green-600">
+            Blog
+          </Link>
+          <Link to={"/privacy"} className="cursor-pointer hover:text-green-600">
+            Privacy Policy
+          </Link>
         </div>
       </div>
 
-      <div className="space-y-6  justify-items-center md:justify-items-end">
+      <div className="space-y-6 mx-auto md:justify-items-end">
         <RequestInvite hidden="flex" />
         <p className="capitalize"> © Ecobank. All rights reserved</p>
       </div>
