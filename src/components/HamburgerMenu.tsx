@@ -50,7 +50,7 @@ export const HamburgerMenu = ({
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
-                  className="py-10 items-center gap-5 flex-col inline-flex "
+                  className="py-10 items-center gap-5 flex-col flex "
                 >
                   <NavLink to={"/"} className={activeNav}>
                     Home

@@ -64,7 +64,7 @@ export const NavBar = () => {
           </div>
 
           {/* SideBar for mobile */}
-          <div className="lg:hidden justify-items-end ">
+          <div className="lg:hidden justify-self-end ">
             <HamburgerMenu
               menuRef={menuRef}
               isOpen={isOpen}

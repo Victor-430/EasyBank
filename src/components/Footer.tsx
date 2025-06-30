@@ -57,7 +57,6 @@ export const Footer = () => {
             About Us
           </Link>
           <Link to={"/careers"} className="cursor-pointer hover:text-green-600">
-            {" "}
             Careers
           </Link>
           <Link to={"/contact"} className="cursor-pointer hover:text-green-600">
