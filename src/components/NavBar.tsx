@@ -6,6 +6,7 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export const NavBar = () => {
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const hamburgerRef = useRef<HTMLDivElement | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const activeNav = ({ isActive }: { isActive: boolean }) =>
@@ -18,10 +19,18 @@ export const NavBar = () => {
   // listens for clicks outside the menu
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-        setIsOpen(!isOpen);
+      const isOutsideMenu =
+        menuRef.current && !menuRef.current.contains(e.target as Node);
+
+      const isOutsideHamburger =
+        hamburgerRef.current &&
+        !hamburgerRef.current.contains(e.target as Node);
+
+      if (isOutsideMenu && isOutsideHamburger) {
+        setIsOpen(false);
       }
     };
+
     if (isOpen) {
       document.addEventListener("mousedown", handleOutsideClick);
     }
@@ -64,7 +73,7 @@ export const NavBar = () => {
           </div>
 
           {/* SideBar for mobile */}
-          <div className="lg:hidden justify-self-end ">
+          <div className="lg:hidden justify-self-end ref={hamburgerRef}">
             <HamburgerMenu
               menuRef={menuRef}
               isOpen={isOpen}
