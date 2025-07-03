@@ -8,6 +8,7 @@ export const Articles = () => {
   return (
     <div className="bg-LightGray">
       <motion.article
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.8, delay: 0.5 } }}
         viewport={{ once: true }}
         id="#articles"

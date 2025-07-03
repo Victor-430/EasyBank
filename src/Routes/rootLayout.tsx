@@ -1,15 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Home } from "../Pages/Home";
-import { PageNotFound } from "../Pages/PageNotFound";
+// import { PageNotFound } from "../Pages/PageNotFound";
 import { Blog } from "../Pages/Blog";
-import{About} from "../Pages/About"
+import { About } from "../Pages/About";
 import { NavBar } from "../components/NavBar";
+import { ErrorPage } from "../Pages/ErrorPage";
+// import { CareersPage } from "../Pages/CareersPage";
 
 export const rootLayout = createBrowserRouter([
   {
     path: "/",
     element: <NavBar />,
-    errorElement: <PageNotFound />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -21,13 +23,14 @@ export const rootLayout = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog />
+        element: <Blog />,
       },
+      // { path: "/careers", element: <CareersPage /> },
 
-      {
-        path: "*",
-        element: <PageNotFound />,
-      },
+      // {
+      //   path: "*",
+      //   element: <PageNotFound />,
+      // },
     ],
   },
 ]);
