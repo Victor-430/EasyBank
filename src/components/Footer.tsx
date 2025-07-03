@@ -18,7 +18,7 @@ interface NavigationLink {
   label: string;
 }
 
-export const Footer: React.FC = () => {
+export const Footer = () => {
   const navigate = useNavigate();
 
   const handleNavigation = (path: string): void => {

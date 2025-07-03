@@ -48,7 +48,13 @@ export const NavBar = () => {
                 animate={{ x: 0, transition: { duration: 1, delay: 0.5 } }}
                 className="text-DarkBlue font-extrabold text-xl"
               >
-                <img loading="eager" alt="logo" src="/logo.svg" />
+                <img
+                  loading="eager"
+                  alt="logo"
+                  src="/logo.svg"
+                  width={139}
+                  height={20}
+                />
               </motion.div>
             </MotionConfig>
           </div>
