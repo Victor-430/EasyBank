@@ -1,7 +1,7 @@
 import Careers from "@/components/Careers";
 import { Footer } from "../components/Footer";
 
-export const CareersPage = () => {
+const CareersPage = () => {
   return (
     <>
       <Careers />
@@ -9,3 +9,5 @@ export const CareersPage = () => {
     </>
   );
 };
+
+export default CareersPage;

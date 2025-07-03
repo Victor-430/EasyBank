@@ -1,11 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home } from "../Pages/Home";
-import { Blog } from "../Pages/Blog";
-import { About } from "../Pages/About";
+
 import { NavBar } from "../components/NavBar";
 import { ErrorPage } from "../Pages/ErrorPage";
-import { PageNotFound } from "@/Pages/PageNotFound";
-import { CareersPage } from "@/Pages/CareersPage";
+
+import { lazy } from "react";
+
+const Home = lazy(() => import("../Pages/Home"));
+const CareersPage = lazy(() => import("../Pages/CareersPage"));
+const About = lazy(() => import("../Pages/About"));
+const Blog = lazy(() => import("../Pages/Blog"));
+const PageNotFound = lazy(() => import("../Pages/PageNotFound"));
 
 export const rootLayout = createBrowserRouter([
   {
@@ -19,6 +23,7 @@ export const rootLayout = createBrowserRouter([
       },
       {
         path: "/about",
+
         element: <About />,
       },
       {

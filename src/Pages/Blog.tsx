@@ -1,11 +1,13 @@
-import {Articles} from "../components/Articles"
-import {Footer} from "../components/Footer"
+import { Articles } from "../components/Articles";
+import { Footer } from "../components/Footer";
 
-export const Blog = () => {
+const Blog = () => {
   return (
     <>
-    <Articles />
-    <Footer />
+      <Articles />
+      <Footer />
     </>
   );
 };
+
+export default Blog;

@@ -1,7 +1,7 @@
 import { Features } from "../components/Features";
 import { Footer } from "../components/Footer";
 
-export const About = () => {
+const About = () => {
   return (
     <>
       <Features />
@@ -9,3 +9,5 @@ export const About = () => {
     </>
   );
 };
+
+export default About;

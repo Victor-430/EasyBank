@@ -3,7 +3,7 @@ import { Features } from "../components/Features";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className=" font-sans">
       <Hero />
@@ -13,3 +13,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;
