@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <header
       id="#hero"
-      className="relative bg-LightGray flex-grow-0 flex-col-reverse flex gap-y-0  xl:flex-row xl:pl-[6rem]"
+      className="relative xl:overflow-x-hidden bg-LightGray flex-grow-0 flex-col-reverse flex gap-y-0  xl:flex-row xl:pl-[6rem]"
     >
       {/* left Content */}
       <div className="text-center w-full h-fit md:mx-auto lg:w-2/3 xl:w-[60%] pb-[7rem]  md:text-center xl:text-left px-8  space-y-6  ">

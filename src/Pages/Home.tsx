@@ -5,7 +5,7 @@ import { Hero } from "../components/Hero";
 
 export const Home = () => {
   return (
-    <div className="overflow-x-hidden font-sans">
+    <div className=" font-sans">
       <Hero />
       <Features />
       <Articles />
